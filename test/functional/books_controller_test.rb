@@ -3,8 +3,17 @@ require 'test_helper'
 class BooksControllerTest < ActionController::TestCase
   setup do
     @book = books(:one)
+    @update = {
+       :title => "Book title",
+       :edition => "10",
+       :isbn => "444wsadf",
+       :cover => "cover.gif",
+       :description => "Book description",
+       :price => 10.10,
+       :copy_right_year => "1234"
+               }
   end
-
+  
   test "should get index" do
     get :index
     assert_response :success

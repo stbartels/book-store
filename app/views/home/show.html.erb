@@ -1,2 +1,11 @@
-<h1>Home#show</h1>
-<p>Find me in app/views/home/show.html.erb</p>
+<h1><%= @book.title %></h1>
+
+<p><%= image_tag @book.cover %></p>
+<p>Author(s): <%= @book.author %></p>
+<p>Price: <%= number_to_currency(@book.price, :unit => "$ ") %></p>
+<p>ISBN: <%= @book.isbn %></p>
+<p>Edition: <%= @book.edition %></p>
+<p>Copyright Year: <%= @book.copy_right_year %></p>
+<p>Description: <%= @book.description %></p>
+
+<p><a href="">Book Listing</a> <%= button_to "Add to Cart" %></p>

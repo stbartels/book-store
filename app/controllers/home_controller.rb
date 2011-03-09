@@ -4,6 +4,12 @@ class HomeController < ApplicationController
   end
 
   def show
+    @book = Book.find(params[:books])
+    
+    respond_to do |format|
+      format.html
+      format.xml {render :xml => @book}
+    end
   end
 
 end

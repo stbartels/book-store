@@ -17,3 +17,12 @@ two:
   cover: MyString
   description: MyText
   price: 9.99
+  
+crazy_book:
+    title: This is just a test
+    aurhor: Bobby Smith, John Smith, Sara Without the H
+    Edition: 4
+    isbn: 499-322-2232
+    cover: cover_image.jpg
+    description: This is a short description of crazy book
+    price: 90.97

@@ -1,7 +1,10 @@
 <h1>Select a book to view</h1>
 
+<form method="post" action="home/show">
 <select name="books">
 	<% @books.each do |book| %>
 		<option value="<%= book.id %>"><%= book.title %></option>
 	<% end %>
 </select>
+<p><input type="submit" name="action" value="View Book" /></p>
+</form>

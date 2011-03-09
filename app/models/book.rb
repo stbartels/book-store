@@ -7,4 +7,5 @@ class Book < ActiveRecord::Base
   validates_length_of :isbn, :maximum => 50
   validates_length_of :description, :maximum => 50
   validates_format_of :cover, :with => %r{\.(gif|jpg|png)$}i, :message => "only accepts GIF, JGP, PNG formats"
+  validates_numericality_of :price, :greater_than_or_equal_to => 1, :message => "must greater than 1"
 end
