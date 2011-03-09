@@ -1,4 +1,6 @@
 BookStore::Application.routes.draw do
+  resources :carts
+
   get "home/index"
 
   post "home/show"
