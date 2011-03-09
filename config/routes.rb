@@ -1,5 +1,11 @@
 BookStore::Application.routes.draw do
+  get "home/index"
+
+  get "home/show"
+
   resources :books
+  
+  root :to => "home#index", :as => "index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

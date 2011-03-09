@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(:version => 20110308003737) do
     t.string   "cover"
     t.text     "description"
     t.decimal  "price"
-    t.string   "copy_right_year"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "copy_right_year"
   end
 
 end

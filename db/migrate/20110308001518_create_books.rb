@@ -7,7 +7,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :isbn
       t.string :cover
       t.text :description
-      t.decimal :price
+      t.decimal :price, :scale => 2
 
       t.timestamps
     end
