@@ -1,0 +1,41 @@
+[33mcommit 949a917672b565b05ff14cf0328fc65a689b28ae[m
+Author: stbartels <stbartels12@gmail.com>
+Date:   Wed Mar 9 11:30:40 2011 -0600
+
+    Fixed the back to listing link on controller home action show view
+
+[33mcommit 9b6de251e7a660e349dd1dbd2458ecb696a54d68[m
+Author: stbartels <stbartels12@gmail.com>
+Date:   Wed Mar 9 11:24:46 2011 -0600
+
+    Generated cart items for add products to the shopping cart
+
+[33mcommit 52331c981a3490f51fbcd89b91422534fac4c0c0[m
+Author: stbartels <stbartels12@gmail.com>
+Date:   Wed Mar 9 11:20:16 2011 -0600
+
+    Generated scaffold for Cart table
+
+[33mcommit 16627f98f86c0557521811b79b973d5fefc36272[m
+Author: stbartels <stbartels12@gmail.com>
+Date:   Wed Mar 9 11:14:33 2011 -0600
+
+    Added fixture and functional testing for book controller
+
+[33mcommit d7c64ec8be1b15c251d4eb3b5888a9b57386e80f[m
+Author: stbartels <stbartels12@gmail.com>
+Date:   Tue Mar 8 20:44:20 2011 -0600
+
+    Generated Home controller for root index
+
+[33mcommit 4cd3b3e38870352f46c4078a26efbfadb7b88a1c[m
+Author: stbartels <stbartels12@gmail.com>
+Date:   Mon Mar 7 18:45:26 2011 -0600
+
+    Generated scaffold Book. Added missing column 'copy right year'
+
+[33mcommit 6beb38ff22d1a937551fdd8480f7434f575eb669[m
+Author: stbartels <stbartels12@gmail.com>
+Date:   Mon Mar 7 17:46:07 2011 -0600
+
+    Initial Commit

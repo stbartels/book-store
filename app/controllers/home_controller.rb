@@ -1,6 +1,12 @@
 class HomeController < ApplicationController
   def index
     @books = Book.all
+
+    if session[:counter].nil?
+      session[:counter]
+    else
+      session[:counter] += 1
+    end
   end
 
   def show

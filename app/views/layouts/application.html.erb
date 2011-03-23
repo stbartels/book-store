@@ -6,9 +6,19 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body style="background: blue">
 
-<%= yield %>
-
+<div style="width: 800px; margin: 0 auto;">
+	<div style="background: gray">
+		<div style="float: right; width: 280px; padding: 10px; background: gray; color: white">
+			<%= link_to_unless_current "Home", "/" %><br />
+			<%= Time.now.strftime("Current Date: %m/%d/%Y %I:%M %P") %><br />
+			Views <%= session[:counter] %>
+		</div>
+		<div style="width: 480px; padding: 10px; background: white">
+			<%= yield %>
+		</div>
+	</div>
+</div>
 </body>
 </html>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110309172221) do
+ActiveRecord::Schema.define(:version => 20110322203819) do
 
   create_table "books", :force => true do |t|
     t.string   "title"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20110309172221) do
     t.integer  "cart_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "quantity",                                     :default => 1
+    t.decimal  "product_price", :precision => 10, :scale => 2
   end
 
   create_table "carts", :force => true do |t|

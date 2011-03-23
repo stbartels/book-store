@@ -1,5 +1,9 @@
 <h1>Select a book to view</h1>
 
+<% if notice %>
+<p><%= notice %></p>
+<% end %>
+
 <form method="post" action="home/show">
 <select name="books">
 	<% @books.each do |book| %>

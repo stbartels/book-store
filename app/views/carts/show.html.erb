@@ -1,5 +1,18 @@
-<p id="notice"><%= notice %></p>
-
-
-<%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Back', carts_path %>
+<h1>Your Shopping Cart</h1>
+<p id="notice"><%= notice %></p
+<table>
+	<tr>
+		<th>Book Title</th>
+		<th>Quantity</th>
+		<th>Price</th>
+	</tr>
+	<% @cart.cart_items.each do |item| %>
+	<tr>
+		<td><%= item.book.title %></td>
+		<td><%= item.quantity %></td>
+		<td><%= item.product_price%></td>
+	</tr>
+	<% end %>
+	
+</table>
+<p><%= link_to "Book Listing", "/"%></p>
