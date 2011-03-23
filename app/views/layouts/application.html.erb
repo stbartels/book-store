@@ -13,7 +13,7 @@
 		<div style="float: right; width: 280px; padding: 10px; background: gray; color: white">
 			<%= link_to_unless_current "Home", "/" %><br />
 			<%= Time.now.strftime("Current Date: %m/%d/%Y %I:%M %P") %><br />
-			
+			Views <%= session[:counter] %>
 		</div>
 		<div style="width: 480px; padding: 10px; background: white">
 			<%= yield %>
