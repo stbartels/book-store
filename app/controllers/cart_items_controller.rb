@@ -43,7 +43,7 @@ class CartItemsController < ApplicationController
     @cart = current_cart
     book = Book.find(params[:book_id])
     @cart_item = @cart.add_product(book.id, book.price)
-    session[:counter] = 0
+    
     
     respond_to do |format|
       if @cart_item.save
